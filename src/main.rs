@@ -26,8 +26,6 @@ pub extern "C" fn _start() -> ! {
 
     os_in_rust_tutorial::init();
 
-    x86_64::instructions::interrupts::int3();
-
     #[cfg(test)]
     test_main();
 
